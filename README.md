@@ -1,24 +1,26 @@
-<p align="center">
-<img src="https://i.imgur.com/t23TXuR.png" height="50%" width="50%" alt="daubert standard"/>
+<p align="left">
+<img src="https://i.imgur.com/t23TXuR.png" height="20%" width="20%" alt="daubert standard"/>
 </p>
 
-<h1>Lab 3: Recovering Deleted and Damaged Files</h1>
+Introduction
 
-<p align="center">
-<img src="https://i.imgur.com/jhURZyJ.png" height="30%" width="30%" alt="daubert standard"/>
-</p>
+Data recovery techniques are the principal ancestor to modern digital forensics. When computers were much simpler and not connected to the Internet, digital forensic investigations were largely a matter of finding and recovering deleted data from a single hard drive. While today's forensic investigations can span computers, networks, smartphones, and the cloud, data recovery is still a critical component.
 
-    Data recovery techniques are the principal ancestor to modern digital forensics. When computers were much simpler and not connected to the Internet, digital forensic investigations were largely a matter of finding and recovering deleted data from a single hard drive. While today's forensic investigations can span computers, networks, smartphones, and the cloud, data recovery is still a critical component.
+ 
 
-    When a user deletes a file, the file is typically moved to the Trash (Mac OS) or Recycle Bin (Windows). However, moving a file to the Trash or Recycle Bin does not actually delete the file. It simply changes the file's location and designates the file as planned for deletion. Just like the trash can in your own home, you can easily reach in and pull out an item if you change your mind about throwing it out. A file will only be considered "deleted" after the user runs the Empty Trash or Empty Recycle Bin function. However, emptying the Trash or Recycle Bin still does not actually remove the data. The only thing that is removed is the reference in the master file table that tells the operating system where the file was located. From the operating system’s perspective, you are only removing the map to the data, not the data itself. Removing the map gives the operating system permission to mark that area of the hard drive as "free" and overwrite it should new data need to be written there, but until an overwrite occurs, the data remains intact.
+When a user deletes a file, the file is typically moved to the Trash (Mac OS) or Recycle Bin (Windows). However, moving a file to the Trash or Recycle Bin does not actually delete the file. It simply changes the file's location and designates the file as planned for deletion. Just like the trash can in your own home, you can easily reach in and pull out an item if you change your mind about throwing it out. A file will only be considered "deleted" after the user runs the Empty Trash or Empty Recycle Bin function. However, emptying the Trash or Recycle Bin still does not actually remove the data. The only thing that is removed is the reference in the master file table that tells the operating system where the file was located. From the operating system’s perspective, you are only removing the map to the data, not the data itself. Removing the map gives the operating system permission to mark that area of the hard drive as "free" and overwrite it should new data need to be written there, but until an overwrite occurs, the data remains intact.
 
-    Of course, there are many other ways of deleting data beyond moving a file to the Recycle Bin and emptying it. Some more effective data deletion methods include delete with overwriting and physical destruction. A delete with overwriting means that the data is deleted, and then new random data is written to the drive several times, making the recovery of the original files very difficult or impossible. Physical destruction is just that – the destruction of the actual hard drive along with all the data stored on it. This can be accomplished through various methods, including shredding, melting, or crushing the hard drive.
+ 
 
-    In this lab, you will assume the role of a digital forensics specialist who has been assigned to a case involving intellectual property theft. After obtaining a search warrant, the local authorities have seized multiple computers from the suspects and transferred images of their hard drives to the digital forensics team. So far, no incriminating evidence has been found on the drive images, but your boss, the lead investigator, believes the suspects may have deleted incriminating evidence. As a digital forensics specialist, you will use professional data recovery tools and techniques to recover deleted data from different operating systems and file systems.
+Of course, there are many other ways of deleting data beyond moving a file to the Recycle Bin and emptying it. Some more effective data deletion methods include delete with overwriting and physical destruction. A delete with overwriting means that the data is deleted, and then new random data is written to the drive several times, making the recovery of the original files very difficult or impossible. Physical destruction is just that – the destruction of the actual hard drive along with all the data stored on it. This can be accomplished through various methods, including shredding, melting, or crushing the hard drive.
+
+ 
+
+In this lab, you will assume the role of a digital forensics specialist who has been assigned to a case involving intellectual property theft. After obtaining a search warrant, the local authorities have seized multiple computers from the suspects and transferred images of their hard drives to the digital forensics team. So far, no incriminating evidence has been found on the drive images, but your boss, the lead investigator, believes the suspects may have deleted incriminating evidence. As a digital forensics specialist, you will use professional data recovery tools and techniques to recover deleted data from different operating systems and file systems.
 
 
 
-## Lab Overview
+Lab Overview
 
 SECTION 1 of this lab has two parts, which should be completed in the order specified.
 
@@ -36,7 +38,7 @@ Finally, you will explore the virtual environment on your own in SECTION 3 of th
 
 
 
-## Learning Objectives
+Learning Objectives
 
 Upon completing this lab, you will be able to:
 
@@ -54,7 +56,7 @@ Upon completing this lab, you will be able to:
 
 
 
-## Topology
+Topology
 
 This lab contains the following virtual machines. Please refer to the network topology diagram below.
 
@@ -65,11 +67,12 @@ This lab contains the following virtual machines. Please refer to the network to
 
  
 
-1628798985951_mceclip4.png
+<img src="https://i.imgur.com/jhURZyJ.png" height="20%" width="20%" alt="daubert standard"/>
+</p>
 
 
 
-## Tools and Software
+Tools and Software
 
 The following software and/or utilities are required to complete this lab. Students are encouraged to explore the Internet to learn more about the products and tools used in this lab.
 
@@ -82,7 +85,7 @@ The following software and/or utilities are required to complete this lab. Stude
 
 
 
-## Deliverables
+Deliverables
 
 Upon completion of this lab, you are required to provide the following deliverables to your instructor:
 
@@ -155,5 +158,3 @@ SECTION 3
  
 
     None
-
-## Report
